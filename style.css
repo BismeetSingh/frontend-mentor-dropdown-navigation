@@ -195,6 +195,9 @@ ul {
     color: var(--medium-gray);
     letter-spacing: 0.5px;
     background-color: white;
+    z-index: 99;
+    position: relative;
+    overflow: visible;
 
 }
 
