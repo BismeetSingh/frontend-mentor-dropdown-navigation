@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="toggle.js"></script>
+</head>
+<body>
+  <main>
+    <div id="navbar">
+      <img src="images/logo.svg" class="logo navbar-img" alt="logo">
+    
+    <ul>
+      <div class="navbar-items">
+        <div class="navbar-list-item">
+          <div class="dropdown-list item-has-children">
+            <div class="menu-item-header-with-arrow" onclick="toggleMenuVisibility(0)">
+              <li>Features</li>
+              <img class="navbar-img toggle-menu" src="images/icon-arrow-down.svg" alt="down" />
+            </div>
+           
+            <div class="dropdown show">
+              <ul  class="dropdown-items-container">
+                <div class="dropdown-items">
+                  <img src="images/icon-todo.svg" alt="">
+                  <li >Todo List</li>
+                </div>
+                <div class="dropdown-items">
+                  <img src="images/icon-calendar.svg" alt="">
+                  <li >Calendar</li>
+                </div>
+               
+                <div class="dropdown-items">
+                  <img src="images/icon-reminders.svg" alt="">
+                  <li >Reminders</li>
+                </div>
+                <div class="dropdown-items">
+                  <img src="images/icon-planning.svg" alt="">
+                  <li >Planning</li>
+                </div>
+                
+              </ul>
+            </div>
+          </div>
+          
+          
+          
+          </div>
+          <div class="navbar-list-item">
+            <div class="dropdown-list item-has-children">
+              <div class="menu-item-header-with-arrow" onclick="toggleMenuVisibility(1)">
+                <li>Company</li>
+                <img  class="navbar-img toggle-menu" src="images/icon-arrow-down.svg" alt="down"  />
+              </div>
+         
+          <div  class="dropdown show">
+            <ul  class="dropdown-items-container">
+              <li class="dropdown-items">History</li>
+              <li class="dropdown-items">Our Team</li>
+              <li class="dropdown-items">Blog</li>
+            </ul>
+          </div>
+         
+          </div>
+          
+        </div>
+          <div class="navbar-list-item">
+          <li>Careers</li>
+          </div>
+          <div class="navbar-list-item">
+          <li> About</li>
+        </div>
+      </div>
+      
+      
+    </ul>
+      <div class="navbar-links">
+        <button>Login</button>
+        <button>Register</button>
+      
+      </div>
+     
+  </div>
+  <!-- <div class="dropdown">
+    <ul  class="dropdown-items-container">
+      <div class="dropdown-items">
+        <img src="images/icon-todo.svg" alt="">
+        <li >Todo List</li>
+      </div>
+      <div class="dropdown-items">
+        <img src="images/icon-calendar.svg" alt="">
+        <li >Calendar</li>
+      </div>
+     
+      <div class="dropdown-items">
+        <img src="images/icon-reminders.svg" alt="">
+        <li >Reminders</li>
+      </div>
+      <div class="dropdown-items">
+        <img src="images/icon-planning.svg" alt="">
+        <li >Planning</li>
+      </div>
+      
+    </ul>
+  </div> -->
+ 
+  <section class="content-container">
+  <div class="content">
+    <div class="text-content">
+      
+    
+    <h1>Make Remote Work </h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+  
+    <button>Learn More</button>
+    <div class="icons-clients">
+      <img src="images/client-databiz.svg" />
+      <img src="images/client-audiophile.svg" />
+      <img src="images/client-meet.svg" />
+      <img src="images/client-maker.svg" />
+    </div>
+   
+  </div>
+  <picture>
+    <source media="(min-width:650px)" srcset="images/image-hero-desktop.png">
+    <source media="(min-width:465px)" srcset="images/image-hero-mobile.png">
+    <img src="images/image-hero-mobile.png" alt="Flowers">
+  </picture>
+</div>
+</section>
+  </main>
+ 
+
+ 
+
+  
+
+
+  
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
