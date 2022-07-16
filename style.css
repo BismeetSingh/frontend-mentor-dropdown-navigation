@@ -110,7 +110,7 @@ ul {
    
 }
 
-.dropdown:hover .dropdown__icon {
+.dropdown:hover .dropdown_icon {
     transform: rotate(180deg);
   }
 
