@@ -101,7 +101,6 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 1rem;
     align-items: center;
 }
 
@@ -133,14 +132,18 @@ ul {
 .nav_list {
     display: flex;
     font: var(--common-font);
-    font-weight: 900;
     color: var(--medium-gray);
     width: 100%;
     font-size: 1rem;
 }
 
 .nav_item > a,.dropdown_item > a  {
+    font: var(--common-font);
     color: var(--medium-gray);
+}
+
+.dropdown_item_container > .d {
+    font-weight: 500;
 }
 
 .nav_item {
@@ -148,6 +151,9 @@ ul {
     padding: 1.4rem 0;
   }
 
+.d {
+    font-weight: 700;
+}
 
 
 .dropdown_item {
@@ -263,7 +269,6 @@ ul {
 .dropdown_link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
 .dropdown_icon {
@@ -368,9 +373,9 @@ picture {
         overflow-y: auto;
       }
 
-    .dropdown_menu {
-    box-shadow: none;
-    }
+      .dropdown_menu {
+        box-shadow: none;
+      }
     
 }
 
@@ -386,14 +391,13 @@ picture {
 /* Header */
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
@@ -401,10 +405,10 @@ picture {
     z-index: var(--z-fixed);
 }
 
-main {
+/* main {
     padding-top: 450px;
     height: auto;
-}
+} */
 
 /* Hamburger */
 
