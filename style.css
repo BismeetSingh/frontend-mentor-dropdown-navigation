@@ -109,7 +109,7 @@ ul {
     color: var(--medium-gray);
     width: 100%;
     font-size: 1rem;
-
+    column-gap: 1em;
 
 }
 
@@ -118,15 +118,11 @@ ul {
 .navbar-items{
     display: flex;
     text-align: center;
-    min-width: 30%;
+    min-width: 80%;
     justify-content: space-between;
 }
 
-.navbar-list-item {
-    display: flex;
-    justify-content: space-between;
-    gap: 1%;
-}
+
 
 .menu-item-header-with-arrow {
     display: flex;
