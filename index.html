@@ -24,67 +24,47 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
-  <script src="toggle.js"></script>
+  <script src="toggle.js"></script> 
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <img src="images/logo.svg" class="logo navbar-img" alt="logo">
     <nav id="navbar">
-      <img src="images/logo.svg" class="logo navbar-img" alt="logo">
-      <div class="navbar-items">
-        <ul>
-            <li class="dropdown-list item-has-children">
-              <div class="menu-item-header-with-arrow" onmouseover="toggleMenuVisibility(0)"  >
-                <h3>Features</h3>
-                <img class="navbar-img toggle-menu" src="images/icon-arrow-down.svg" alt="down" />
-              </div>
-
-              <div class="dropdown show">
-                <ul class="dropdown-items-container">
-                  <li class="dropdown-items">
-                    <img src="images/icon-todo.svg" alt="">
-                    <p>Todo List</p>
-                  </li>
-                  <li class="dropdown-items">
-                    <img src="images/icon-calendar.svg" alt="">
-                    <p>Calendar</p>
-                  </li>
-                  <li class="dropdown-items">
-                    <img src="images/icon-reminders.svg" alt="">
-                    <p>Reminders</p>
-                  </li>
-                  <li class="dropdown-items">
-                    <img src="images/icon-planning.svg" alt="">
-                    <p>Planning</p>
-                  </li>
-
-
-                </ul>
-              </div>
+     
+      <div class="nav-content">
+        <ul class="nav_list">
+        
+            <li class="nav_item dropdown">
+              <a href="#" class="nav__link dropdown__link">Features <img src="images/icon-arrow-down.svg" alt="open menu"/></a>
+                  <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a href="#" class="nav__link">Todo List</a></li>
+                      <li class="dropdown__item"><a href="#" class="nav__link">Calendar</a></li>
+                      <li class="dropdown__item"><a href="#" class="nav__link">Reminders</a></li>
+                      <li class="dropdown__item"><a href="#" class="nav__link">Planning</a></li>
+                  </ul>
+            
             </li>
 
-            <li class="dropdown-list item-has-children">
-              <div class="menu-item-header-with-arrow" onmouseover="toggleMenuVisibility(1)">
-                <h3>Company</h3>
-                <img class="navbar-img toggle-menu" src="images/icon-arrow-down.svg" alt="down" />
-              </div>
-
-              <div class="dropdown show">
-                <ul class="dropdown-items-container">
-                  <li class="dropdown-items">History</li>
-                  <li class="dropdown-items">Our Team</li>
-                  <li class="dropdown-items">Blog</li>
-                </ul>
-              </div>
-
+            <li class="nav_item dropdown">
+              <a href="#" class="nav__link dropdown__link">Company  <img src="images/icon-arrow-down.svg" alt="open menu"/></i></a>
+                  <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a href="#" class="nav__link">History</a></li>
+                      <li class="dropdown__item"><a href="#" class="nav__link">Our Team</a></li>
+                      <li class="dropdown__item"><a href="#" class="nav__link">Blog</a></li>
+                  </ul>
+            
             </li>
 
-          <li class="navbar-list-item">
-            <h3>Careers</h3>
-          </li>
-          <li class="navbar-list-item">
-            <h3> About</h3>
-          </li>
+            <li class="nav_item">
+              <a href="#">Careers</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#">About</a>
+            </li>
+
+      
         </ul>
       </div>
 
@@ -125,7 +105,7 @@
         </picture>
       </div>
     </section>
-  </main>
+  </div>
 
 
 

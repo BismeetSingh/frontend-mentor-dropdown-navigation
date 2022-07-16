@@ -44,6 +44,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--almost-white);
+  font: var(--common-font);
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -66,6 +68,10 @@ select {
   font: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -85,8 +91,11 @@ select {
 /* Logo */
 .logo {
     padding: 1.2rem;
-    height: 50%;
+    
 }
+
+
+
 
 /* Navbar */
 
@@ -103,6 +112,23 @@ ul {
    
 }
 
+.dropdown__menu {
+    display: none;
+}
+
+.dropdown:hover > .dropdown__menu {
+    display: block;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item > a,.dropdown__item > a  {
+    color: var(--medium-gray);
+}
+
 #navbar ul  {
     font: var(--common-font);
     font-weight: 900;
@@ -113,6 +139,9 @@ ul {
 
 }
 
+.dropdown__item {
+    color: var(--medium-gray);
+}
 
 
 .navbar-items{
@@ -124,12 +153,6 @@ ul {
 
 
 
-.menu-item-header-with-arrow {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-}
 
 .navbar-links a{
     font: var(--common-font);
@@ -142,6 +165,12 @@ ul {
     height: 50%;
 
 }
+
+.nav-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .navbar-links button:nth-last-child(1) {
     border-radius: 1rem;
@@ -167,7 +196,7 @@ ul {
 }
 
 /* Dropdown */
-.dropdown.show {
+/* .dropdown.show {
     border-radius: 1rem;
     width: 100%;
     flex-wrap: wrap;
@@ -176,11 +205,11 @@ ul {
     margin-top: 1rem;
     border-radius: 10px;
     
-}
+} */
 
-.dropdown {
+/* .dropdown {
     display: none;
-}
+} */
 
 .dropdown-items-container {
     display: flex;
@@ -211,10 +240,11 @@ ul {
     align-items: center;
 }
 
-.dropdown-list {
+.dropdown__link {
     display: flex;
-    flex-direction: column;
-}
+    align-items: center;
+    justify-content: space-between;
+  }
 
 
 /* Heading */
@@ -298,4 +328,20 @@ picture {
         display: none;
     }
     
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin-top: 450px;
 }
