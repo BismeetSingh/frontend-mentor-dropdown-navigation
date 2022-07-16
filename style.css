@@ -367,6 +367,10 @@ picture {
         transition: .5s;
         overflow-y: auto;
       }
+
+    .dropdown_menu {
+    box-shadow: none;
+    }
     
 }
 
