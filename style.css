@@ -95,9 +95,6 @@ a {
     
 }
 
-
-
-
 /* Navbar */
 
 #navbar {
@@ -120,11 +117,18 @@ ul {
 
 .dropdown_menu {
     display: none;
+    padding: 1rem;
 }
 
 .dropdown:hover > .dropdown_menu {
     display: block;
 }
+
+.dropdown_menu {
+    box-shadow: 0 6px 6px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
 
 .nav_list {
     display: flex;
@@ -148,6 +152,17 @@ ul {
 
 .dropdown_item {
     color: var(--medium-gray);
+    padding: 0.5rem;
+
+}
+
+.dropdown_item_container {
+    display: flex;
+   
+}
+
+.dropdown_item_container > img {
+    margin-right: 1rem;
 }
 
 
