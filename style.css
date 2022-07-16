@@ -11,6 +11,7 @@
     --medium-gray : hsl(0, 0%, 41%);
     --almost-black : hsl(0, 0%, 8%);
     --white : hsl(100, 100%, 100%);
+    --z-fixed:99;
 }
 
 /* Remove default margin */
@@ -102,9 +103,9 @@ a {
 #navbar {
     display: flex;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    align-items: center;
 }
 
 ul {
@@ -127,22 +128,23 @@ ul {
 
 .nav_list {
     display: flex;
-    align-items: center;
+    font: var(--common-font);
+    font-weight: 900;
+    color: var(--medium-gray);
+    width: 100%;
+    font-size: 1rem;
 }
 
 .nav_item > a,.dropdown_item > a  {
     color: var(--medium-gray);
 }
 
-#navbar ul  {
-    font: var(--common-font);
-    font-weight: 900;
-    color: var(--medium-gray);
-    width: 100%;
-    font-size: 1rem;
-    column-gap: 1em;
+.nav_item {
+    margin: 0 1.5rem;
+    padding: 1.4rem 0;
+  }
 
-}
+
 
 .dropdown_item {
     color: var(--medium-gray);
@@ -192,14 +194,12 @@ ul {
     padding: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: var(--almost-white);
+    background-color: black;
 }
 
-.item-has-children li {
-    padding: 0;
-    text-align: end;
+.show {
+    left: 0 !important;
 }
-
 /* Dropdown */
 /* .dropdown.show {
     border-radius: 1rem;
@@ -332,7 +332,29 @@ picture {
     .navbar-items {
         display: none;
     }
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: beige;
+        width: 80%;
+        height: 100vh;
+        padding: 2rem 0;
+        z-index: var(--z-fixed);
+        transition: .5s;
+        overflow-y: auto;
+      }
     
+}
+
+@media screen and (min-width:768px) {
+    .header_toggle {
+        display: none;
+    }
 }
 
 /* Header */
@@ -346,9 +368,13 @@ picture {
     justify-content: space-between;
     padding-top: 10px;
     align-items: flex-start;
+
 }
 
 main {
     padding-top: 450px;
     height: auto;
 }
+
+/* Hamburger */
+
