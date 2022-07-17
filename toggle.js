@@ -4,12 +4,15 @@ const toggleMenuVisibility = (index) => {
     let menu = allMenus[index];
     let icon = allDropDownIcons[index];
     // Keep only 1 menu open at a time.
-    allMenus.forEach((menu)=>{
+    // debugger;
+    for (let menu of allMenus){
         menu.style.display = 'none';
-    })
-    allDropDownIcons.forEach((icon)=>{
+    }
+
+    for (let icon of allDropDownIcons){
         icon.style.transform = 'none';
-    })
+    }
+
     menu.style.display = 'block' ;
     icon.style.transform =  'rotate(180deg)' ;
    
