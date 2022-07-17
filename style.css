@@ -359,8 +359,9 @@ h1 {
         z-index: var(--z-fixed)-1;
         transition: .5s;
         overflow-y: auto;
-        width: 40%;
+        width: 60%;
         flex-direction: column;
+        
        
       }
       .navbar-links {
