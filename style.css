@@ -117,6 +117,9 @@ ul {
 .dropdown_menu {
     display: none;
     padding: 1rem;
+    z-index: var(--z-fixed);
+    position: absolute;
+
 }
 
 .dropdown:hover > .dropdown_menu {
@@ -142,7 +145,7 @@ ul {
     color: var(--medium-gray);
 }
 
-.dropdown_item_container > .d {
+.dropdown_item_container > .a {
     font-weight: 500;
 }
 
@@ -300,6 +303,7 @@ h1 {
     display: flex;
     width: 80%;
     gap: 5%;
+    align-items: center;
 }
 
 .content button {
@@ -405,10 +409,14 @@ picture {
     z-index: var(--z-fixed);
 }
 
-/* main {
-    padding-top: 450px;
+main {
+    /* padding-top: 450px; */
     height: auto;
-} */
+}
 
 /* Hamburger */
 
+.hero-image {
+    display: flex;
+    align-items: center;
+}
