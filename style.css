@@ -118,7 +118,7 @@ ul {
     display: none;
     padding: 1rem;
     z-index: var(--z-fixed);
-    position: absolute;
+   
 
 }
 
@@ -395,6 +395,7 @@ picture {
 
       .dropdown_menu {
         box-shadow: none;
+        
       }
     
 }
@@ -405,6 +406,9 @@ picture {
     }
     .nav{
         min-width: 100%;
+    }
+    .dropdown_menu{
+        position: absolute;
     }
 }
 
