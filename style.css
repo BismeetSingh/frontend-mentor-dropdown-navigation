@@ -223,7 +223,7 @@ ul {
     padding-left: 1em;
     padding-right: 1em;
     margin-right: 0.5rem;
-    
+    background-color: var(--white);
 }
 
 .navbar-links button:nth-last-child(2) {
