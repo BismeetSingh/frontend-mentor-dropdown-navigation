@@ -46,7 +46,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--almost-white);
-  font: var(--common-font);
 }
 
 /* A elements that don't have a class get default styles */
@@ -99,8 +98,8 @@ a {
 
 #navbar {
     display: flex;
-    column-gap: 50%;
     align-items: center;
+    justify-content: space-between;
 }
 
 ul {
@@ -133,7 +132,6 @@ ul {
 
 .nav_list {
     display: flex;
-    font: var(--common-font);
     color: var(--medium-gray);
     font-size: 1rem;
 }
@@ -144,7 +142,6 @@ ul {
 }
 
 .nav_item > a  {
-    font: var(--common-font);
     color: var(--medium-gray);
     font-size: 1rem;
 }
@@ -158,7 +155,6 @@ ul {
 
 .dropdown_menu  a {
     font-weight: 500;
-    font: var(--common-font);
     color: var(--medium-gray);
     font-size: 1rem;
 }
@@ -197,7 +193,6 @@ ul {
 }
 
 .navbar-links a{
-    font: var(--common-font);
     text-decoration: none;
     font-weight: 500;
     
@@ -234,12 +229,11 @@ ul {
 }
 
 .show {
-    left: 0 !important;
+    right:0 !important;
 }
 
 
 .dropdown-items-container li{
-    font: var(--common-font);
     margin-left: 1rem;
     font-size: 1rem;
     column-gap:1em;
@@ -265,7 +259,6 @@ ul {
 /* Heading */
 
 h1 {
-    font: var(--common-font);
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 0.1px;
@@ -274,7 +267,6 @@ h1 {
 /* Content */
 
 .content p {
-    font: var(--common-font);
     font-weight: 500;
     color: var(--medium-gray);
     font-size: 1.5rem;
@@ -293,7 +285,6 @@ h1 {
     border-radius: 1em;
     padding:0.7em;
     color: var(--almost-white);
-    font: var(--common-font);
     font-weight: bold;
     margin-top: 2em;
     padding-left: 2em;
@@ -341,6 +332,13 @@ h1 {
         flex-direction: column-reverse;
         gap: 2%;
     }
+
+    .header{
+        justify-content: space-between;
+    }
+
+
+
     .content button{
         width: 100%;
     }
@@ -354,7 +352,7 @@ h1 {
     .nav {
         position: fixed;
         top: 0;
-        left: -100%;
+        right: -100%;
         background-color: var(--almost-white);
         width: 80%;
         height: 100vh;
@@ -362,12 +360,18 @@ h1 {
         z-index: var(--z-fixed)-1;
         transition: .5s;
         overflow-y: auto;
+        flex-direction: column;
+      }
+      .navbar-links {
+        flex-direction: column;
       }
 
       .dropdown_menu {
         box-shadow: none;
         
       }
+
+     
       
       .icons-clients {
         display: grid;
@@ -391,11 +395,12 @@ h1 {
         display: none;
     }
     .nav{
-        min-width: 100%;
+        min-width: 80%;
     }
     .dropdown_menu{
         position: absolute;
     }
+    
 }
 
 /* Header */
@@ -404,9 +409,9 @@ h1 {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
     padding-top: 10px;
     align-items: center;
+    font-family: var(--common-font);
    
 
 }
@@ -416,8 +421,9 @@ h1 {
 }
 
 main {
-    /* padding-top: 450px; */
     height: auto;
+    font-family: var(--common-font);
+    
 }
 
 /* Hamburger */
