@@ -1,8 +1,17 @@
 const toggleMenuVisibility = (index) => {
-    let menu = document.getElementsByClassName("dropdown_menu")[index];
-    let icon = document.getElementsByClassName("dropdown_icon")[index];
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-    icon.style.transform = icon.style.transform === 'none'? 'rotate(180deg)' : 'none';
+    let allMenus = document.getElementsByClassName("dropdown_menu");
+    let allDropDownIcons = document.getElementsByClassName("dropdown_icon");
+    let menu = allMenus[index];
+    let icon = allDropDownIcons[index];
+    // Keep only 1 menu open at a time.
+    allMenus.forEach((menu)=>{
+        menu.style.display = 'none';
+    })
+    allDropDownIcons.forEach((icon)=>{
+        icon.style.transform = 'none';
+    })
+    menu.style.display = 'block' ;
+    icon.style.transform =  'rotate(180deg)' ;
    
 }
 
