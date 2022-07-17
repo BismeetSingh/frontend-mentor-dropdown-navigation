@@ -99,7 +99,6 @@ a {
 
 #navbar {
     display: flex;
-    width: 100%;
     column-gap: 50%;
     align-items: center;
 }
@@ -136,7 +135,6 @@ ul {
     display: flex;
     font: var(--common-font);
     color: var(--medium-gray);
-    width: 100%;
     font-size: 1rem;
 }
 
@@ -153,7 +151,7 @@ ul {
 
 .nav_item > a:hover {
     color: var(--almost-black);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -268,7 +266,7 @@ ul {
 
 h1 {
     font: var(--common-font);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 0.1px;
 }
@@ -279,7 +277,7 @@ h1 {
     font: var(--common-font);
     font-weight: 500;
     color: var(--medium-gray);
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
 
 }
@@ -307,8 +305,9 @@ h1 {
 
 .icons-clients {
     display: flex;
+    margin-top: 2rem;
     justify-content: start;
-    margin-top: 5rem;
+    column-gap: 10%;
 
 }
 
@@ -318,16 +317,19 @@ h1 {
 }
 
 .text-content {
+   
     display: flex;
     flex-direction: column;
     
+    
+}
+.text-content p {
+    margin-top: 2rem;
 }
 
 /* Picture */
 
-picture {
-    width: 100%;
-}
+
 
 /* Media Queries */
 
@@ -337,7 +339,6 @@ picture {
 
     .content {
         flex-direction: column-reverse;
-        width: 100%;
         gap: 2%;
     }
     .content button{
@@ -368,13 +369,20 @@ picture {
         
       }
       
-      .icons-clients { 
-        justify-content: center;
-      }
+      .icons-clients {
+        display: grid;
+        margin-top: 2em 1.5em 1.5em 1.5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0%;
+    
+    }
       .text-content> h1, .text-content > p{
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
+            margin-top: 2rem;
       }
+      
+
     
 }
 
@@ -395,7 +403,6 @@ picture {
 .header {
     top: 0;
     left: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;

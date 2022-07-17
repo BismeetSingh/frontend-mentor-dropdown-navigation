@@ -1,14 +1,10 @@
-// const toggleMenuVisibility = (index) => {
-//     document.getElementsByClassName("dropdown")[index].classList.toggle("show");
-//     let img = document.getElementsByClassName('toggle-menu')[index].src;
-//     if (img.indexOf('images/icon-arrow-down.svg') != -1) {
-//         document.getElementsByClassName('toggle-menu')[index].src = 'images/icon-arrow-up.svg';
-//     }
-//     else {
-//         document.getElementsByClassName('toggle-menu')[index].src = 'images/icon-arrow-down.svg';
-//     }
-
-// }
+const toggleMenuVisibility = (index) => {
+    let menu = document.getElementsByClassName("dropdown_menu")[index];
+    let icon = document.getElementsByClassName("dropdown_icon")[index];
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    icon.style.transform = icon.style.transform === 'none'? 'rotate(180deg)' : 'none';
+   
+}
 
 const showMenu = (toggleId,navId) =>{
     const toggle = document.getElementById(toggleId);
