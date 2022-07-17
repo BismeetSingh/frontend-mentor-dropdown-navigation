@@ -425,6 +425,7 @@ h1 {
 
 .header_toggle {
     z-index: var(--z-fixed);
+    padding: 1rem;
 }
 
 main {
