@@ -98,7 +98,6 @@ a {
 
 #navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -360,15 +359,22 @@ h1 {
         z-index: var(--z-fixed)-1;
         transition: .5s;
         overflow-y: auto;
+        width: 40%;
         flex-direction: column;
+       
       }
       .navbar-links {
         flex-direction: column;
+        align-items: center;
       }
 
       .dropdown_menu {
         box-shadow: none;
         
+      }
+      .nav_item {
+        padding: 1rem 0;
+        margin: 0 0;
       }
 
      
@@ -396,6 +402,7 @@ h1 {
     }
     .nav{
         min-width: 80%;
+        align-items: center;
     }
     .dropdown_menu{
         position: absolute;
