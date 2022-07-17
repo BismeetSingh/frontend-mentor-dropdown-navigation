@@ -1,6 +1,7 @@
 /* Box sizing rules */
 *,
 *::before,
+*,
 *::after {
   box-sizing: border-box;
 }
@@ -46,7 +47,6 @@ body {
   line-height: 1.5;
   background-color: var(--almost-white);
   font: var(--common-font);
-
 }
 
 /* A elements that don't have a class get default styles */
@@ -100,7 +100,7 @@ a {
 #navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    column-gap: 50%;
     align-items: center;
 }
 
@@ -148,7 +148,7 @@ ul {
 .nav_item > a  {
     font: var(--common-font);
     color: var(--medium-gray);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .nav_item > a:hover {
@@ -162,7 +162,7 @@ ul {
     font-weight: 500;
     font: var(--common-font);
     color: var(--medium-gray);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav_item {
@@ -198,18 +198,15 @@ ul {
     justify-content: space-between;
 }
 
-
-
-
 .navbar-links a{
     font: var(--common-font);
     text-decoration: none;
     font-weight: 500;
+    
 }
 
 .navbar-links {
     display: flex;
-    height: 50%;
 
 }
 
@@ -220,12 +217,13 @@ ul {
   }
 
 .navbar-links button:nth-last-child(1) {
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     font-size: 1rem;
     padding: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
     margin-right: 0.5rem;
+    
 }
 
 .navbar-links button:nth-last-child(2) {
@@ -234,42 +232,13 @@ ul {
     padding: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: black;
+    background-color: var(--white);
 }
 
 .show {
     left: 0 !important;
 }
-/* Dropdown */
-/* .dropdown.show {
-    border-radius: 1rem;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: start;
-    display: flex;
-    margin-top: 1rem;
-    border-radius: 10px;
-    
-} */
 
-/* .dropdown {
-    display: none;
-} */
-
-/* .dropdown-items-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    gap: 0.7rem;
-    font-weight: 500;
-    color: var(--medium-gray);
-    letter-spacing: 0.5px;
-    background-color: white;
-    z-index: 99;
-    position: relative;
-    overflow: visible;
-
-} */
 
 .dropdown-items-container li{
     font: var(--common-font);
@@ -339,7 +308,6 @@ h1 {
 .icons-clients {
     display: flex;
     justify-content: start;
-    gap: 5%;
     margin-top: 5rem;
 
 }
@@ -369,6 +337,8 @@ picture {
 
     .content {
         flex-direction: column-reverse;
+        width: 100%;
+        gap: 2%;
     }
     .content button{
         width: 100%;
@@ -397,6 +367,14 @@ picture {
         box-shadow: none;
         
       }
+      
+      .icons-clients { 
+        justify-content: center;
+      }
+      .text-content> h1, .text-content > p{
+            font-size: 2rem;
+            text-align: center;
+      }
     
 }
 
@@ -422,6 +400,7 @@ picture {
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
+   
 
 }
 
