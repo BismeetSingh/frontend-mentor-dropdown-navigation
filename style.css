@@ -98,7 +98,6 @@ a {
 
 #navbar {
     display: flex;
-    justify-content: space-between;
 }
 
 ul {
@@ -404,6 +403,7 @@ h1 {
     .nav{
         min-width: 80%;
         align-items: center;
+        justify-content: space-between;
     }
     .dropdown_menu{
         position: absolute;
