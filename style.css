@@ -137,6 +137,7 @@ ul {
 
 .dropdown_item_container:hover {
     color: var(--almost-black);
+
 }
 
 .nav_item > a  {
@@ -175,6 +176,7 @@ ul {
 
 .dropdown_item_container {
     display: flex;
+    align-items: center;
    
 }
 
