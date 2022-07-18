@@ -23,14 +23,18 @@ const toggleMenuVisibility = (index) => {
 const showMenu = (toggleId,navId) =>{
     const toggle = document.getElementById(toggleId);
     const navMenu = document.getElementById(navId);
+    const main = document.getElementById('main');
     if (toggle && navMenu){
         toggle.addEventListener('click',()=>{
             navMenu.classList.toggle('show');
             if (toggle.src.indexOf('images/icon-menu.svg') != -1) {
                         toggle.src = 'images/icon-close-menu.svg';
+                        main.style.touchAction = "none";
+
                     }
                     else {
                         toggle.src = 'images/icon-menu.svg';
+                        main.style.touchAction = "initial";
                     }
         })
     }
