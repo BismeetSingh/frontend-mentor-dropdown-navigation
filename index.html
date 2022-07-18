@@ -17,14 +17,14 @@
 <body>
   <header class="header">
     <img src="images/logo.svg" class="logo navbar-img" alt="logo">
-     <img src="images/icon-menu.svg" class="header_toggle" id="header_toggle" alt="toggle menu" />
+     <button class="header_toggle" ><img src="images/icon-menu.svg" id="header_toggle" alt="toggle menu"> </button>
     <nav id="navbar" class="nav"> 
      
        <div class="nav-content">
         <ul class="nav_list">
         
             <li class="nav_item dropdown">
-              <a href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(0)">Features <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu" aria-expanded="false" aria-controls="dropdown"/></a>
+              <div href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(0)">Features <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu" aria-expanded="false" aria-controls="dropdown"/></div>
                   <ul class="dropdown_menu">
                       <li class="dropdown_item">
                         <div class="dropdown_item_container">
@@ -57,7 +57,7 @@
             </li>
 
             <li class="nav_item dropdown">
-              <a href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(1)">Company  <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu"/></i></a>
+              <div href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(1)">Company  <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu"/></i></div>
                   <ul class="dropdown_menu">
                       <li class="dropdown_item"><a href="#" class="nav_link">History</a></li>
                       <li class="dropdown_item"><a href="#" class="nav_link">Our Team</a></li>

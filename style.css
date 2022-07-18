@@ -140,12 +140,12 @@ ul {
 
 }
 
-.nav_item > a  {
+.nav_item > div,.nav_item a {
     color: var(--medium-gray);
     font-size: 1rem;
 }
 
-.nav_item > a:hover {
+.nav_item > div:hover,.nav_item a:hover  {
     color: var(--almost-black);
     font-weight: 500;
 }
@@ -162,10 +162,6 @@ ul {
     margin: 0 1.5rem;
     padding: 1.4rem 0;
   }
-
-.d {
-    font-weight: 700;
-}
 
 
 .dropdown_item {
@@ -434,6 +430,8 @@ h1 {
 .header_toggle {
     z-index: var(--z-fixed);
     padding: 1rem;
+    border: none;
+    background-color: transparent;
 }
 
 main {
