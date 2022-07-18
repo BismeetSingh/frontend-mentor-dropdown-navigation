@@ -285,11 +285,13 @@ h1 {
     color: var(--almost-white);
     font-weight: bold;
     margin-top: 2em;
-    padding-left: 2em;
-    padding-right: 2rem;
     font-size: 1.2em;
-    width: 30%;
+    width: 50%;
     background-color: var(--almost-black);
+}
+.content button:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-black);
 }
 
 .icons-clients {
@@ -338,7 +340,7 @@ h1 {
 
 
     .content button{
-        width: 100%;
+        width: 50%;
     }
     .navbar-items {
         display: none;
@@ -391,6 +393,9 @@ h1 {
             text-align: center;
             margin-top: 2rem;
       }
+      .text-content {
+        align-items: center;
+      }
       
 
     
@@ -440,12 +445,4 @@ main {
 .hero-image {
     display: flex;
     align-items: center;
-}
-
-/* Learn more button */
-
-.learn:hover {
-    background-color: var(--almost-white);
-    color: var(--almost-black);
-
 }
