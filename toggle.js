@@ -5,8 +5,8 @@ const toggleMenuVisibility = (index) => {
     let icon = allDropDownIcons[index];
     let currentState = menu.style.display;
     let currentStateMenuIcon = icon.style.transform;
+    let currentAriaExpandedState = icon.getAttribute('aria-expanded');
     // Keep only 1 menu open at a time.
-    // debugger;
     for (let menu of allMenus){
         menu.style.display = 'none';
     }
@@ -16,6 +16,7 @@ const toggleMenuVisibility = (index) => {
     }
 
     menu.style.display  = currentState === 'block' ?'none':'block';
+    icon.setAttribute('aria-expanded',menu.style.display === 'block' ? true:false); 
     icon.style.transform = currentStateMenuIcon ===   'rotate(180deg)' ?'none':'rotate(180deg)';
    
 }

@@ -118,12 +118,17 @@ ul {
 
 
 
-.nav_item > div,.nav_item a {
+.nav_item > button,.nav_item a {
     color: var(--medium-gray);
     font-size: 1rem;
 }
 
-.nav_item > div:hover,.nav_item a:hover  {
+.nav_item > button {
+    background-color: transparent;
+    border: none;
+}
+
+.nav_item > button:hover,.nav_item a:hover  {
     color: var(--almost-black);
     font-weight: 500;
 }
@@ -310,6 +315,7 @@ h1 {
 
       .dropdown_menu {
         box-shadow: none;
+
         
       }
       .nav_item {
@@ -432,9 +438,9 @@ main {
     display: none;
     padding: 1rem;
     z-index: var(--z-fixed);
-   
     border-radius: 10px;
-   
+   background-color: white;
+
 }
 
 .dropdown:hover > .dropdown_menu {

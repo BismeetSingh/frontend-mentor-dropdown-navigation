@@ -24,8 +24,8 @@
         <ul class="nav_list">
         
             <li class="nav_item dropdown">
-              <div href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(0)">Features <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu" aria-expanded="false" aria-controls="dropdown"/></div>
-                  <ul class="dropdown_menu">
+              <button href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(0)" onmouseover="toggleMenuVisibility(0)">Features <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu" aria-expanded="false" aria-controls="dropdown_menu_features"/></button>
+                  <ul class="dropdown_menu" id="dropdown_menu_features">
                       <li class="dropdown_item">
                         <div class="dropdown_item_container">
                           <img src="images/icon-todo.svg" alt="to_do">
@@ -57,8 +57,8 @@
             </li>
 
             <li class="nav_item dropdown">
-              <div href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(1)">Company  <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu"/></i></div>
-                  <ul class="dropdown_menu">
+              <button href="#" class="nav_link dropdown_link" onclick="toggleMenuVisibility(1)" onmouseover="toggleMenuVisibility(1)">Company  <img src="images/icon-arrow-down.svg" class="dropdown_icon" alt="open menu" aria-expanded="false" aria-controls="dropdown_menu_company"/></i></button>
+                  <ul class="dropdown_menu" id="dropdown_menu_company">
                       <li class="dropdown_item"><a href="#" class="nav_link">History</a></li>
                       <li class="dropdown_item"><a href="#" class="nav_link">Our Team</a></li>
                       <li class="dropdown_item"><a href="#" class="nav_link">Blog</a></li>
