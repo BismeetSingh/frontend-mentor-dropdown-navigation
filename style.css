@@ -142,9 +142,16 @@ ul {
     justify-content: space-between;
 }
 
-.navbar-links a{
+.navbar-links button{
     text-decoration: none;
     font-weight: 500;
+    color: var(--medium-gray);
+    
+}
+
+.navbar-links button:hover{
+   
+    color: var(--almost-black);
     
 }
 
