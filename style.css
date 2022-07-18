@@ -441,3 +441,11 @@ main {
     display: flex;
     align-items: center;
 }
+
+/* Learn more button */
+
+.learn:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+
+}
