@@ -343,6 +343,7 @@ h1 {
     }
     .dropdown_menu{
         position: absolute;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 15%);
     }
     
 }
@@ -425,15 +426,11 @@ main {
     padding: 1rem;
     z-index: var(--z-fixed);
    
+    border-radius: 10px;
+   
 }
 
 .dropdown:hover > .dropdown_menu {
     display: block;
 }
-
-.dropdown_menu {
-    box-shadow: 0 6px 6px rgb(0 0 0 / 15%);
-    border-radius: 10px;
-}
-
 
