@@ -5,7 +5,6 @@ const toggleMenuVisibility = (index) => {
     let icon = allDropDownIcons[index];
     let currentState = menu.style.display;
     let currentStateMenuIcon = icon.style.transform;
-    let currentAriaExpandedState = icon.getAttribute('aria-expanded');
     // Keep only 1 menu open at a time.
     for (let menu of allMenus){
         menu.style.display = 'none';
