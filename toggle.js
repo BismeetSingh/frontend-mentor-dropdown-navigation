@@ -28,12 +28,16 @@ const showMenu = (toggleId,navId) =>{
         toggle.addEventListener('click',()=>{
             navMenu.classList.toggle('show');
             if (toggle.src.indexOf('images/icon-menu.svg') != -1) {
+                        document.body.style.overflowY = 'hidden';
+                        navMenu.style.overflowY = 'scroll';
                         toggle.src = 'images/icon-close-menu.svg';
                         // main.style.touchAction = "none";
 
                     }
                     else {
                         toggle.src = 'images/icon-menu.svg';
+                        document.body.style.overflowY = 'scroll';
+                        navMenu.style.overflowY = 'hidden';
                         // main.style.touchAction = "initial";
                     }
         })
